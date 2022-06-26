@@ -13,26 +13,30 @@ def count_find_num(primes_l, limit):
     qty = len(set(result))
     max_value = max(result) if result else None
 
+    print([qty, max_value] if max_value else [])
+
     return [qty, max_value] if max_value else []
 
 
 if __name__ == "__main__":
-    primesL = [2, 3]
-    limit = 200
-    assert count_find_num(primesL, limit) == [13, 192]
-
-    primesL = [2, 5]
-    limit = 200
-    assert count_find_num(primesL, limit) == [8, 200]
-
-    primesL = [2, 3, 5]
-    limit = 500
-    assert count_find_num(primesL, limit) == [12, 480]
-
-    primesL = [2, 3, 5]
-    limit = 1000
-    assert count_find_num(primesL, limit) == [19, 960]
-
-    primesL = [2, 3, 47]
-    limit = 200
-    assert count_find_num(primesL, limit) == []
+    count_find_num([17, 31, 79], 1434589)  # [3, 1290623]
+    #
+    # primesL = [2, 3]
+    # limit = 200
+    # assert count_find_num(primesL, limit) == [13, 192]
+    #
+    # primesL = [2, 5]
+    # limit = 200
+    # assert count_find_num(primesL, limit) == [8, 200]
+    #
+    # primesL = [2, 3, 5]
+    # limit = 500
+    # assert count_find_num(primesL, limit) == [12, 480]
+    #
+    # primesL = [2, 3, 5]
+    # limit = 1000
+    # assert count_find_num(primesL, limit) == [19, 960]
+    #
+    # primesL = [2, 3, 47]
+    # limit = 200
+    # assert count_find_num(primesL, limit) == []
